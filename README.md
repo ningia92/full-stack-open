@@ -1,5 +1,5 @@
-# Deep Dive Into Modern Web Development
-## [Full Stack Open 2024](https://fullstackopen.com/en/)
+# [Deep Dive Into Modern Web Development](https://fullstackopen.com/en/)
+## [Full Stack open 2024](https://fullstackopen.com/en/)
 
 ***This repository will contain all my solutions to the exercises encountered during the course, divided into directories for each part.***
 
