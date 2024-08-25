@@ -4,5 +4,5 @@ In this part, we will familiarize ourselves with the practicalities of taking th
 
 ## Modules
 
-a. General info
+a. General info  
 b. Fundamental of Web apps
