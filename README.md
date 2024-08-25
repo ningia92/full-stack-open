@@ -11,31 +11,30 @@ This course is an introduction to modern web development with JavaScript. The ma
 
 Other topics include debugging applications, container technology, configuration, managing runtime environments, and databases.
 
-### Modules and solutions
+### [Part 0 - Fundamentals of Web apps](https://github.com/ningia92/full-stack-open/tree/main/part0)
 
-### [Part 0 - Fundamentals of Web apps](https://fullstackopen.com/en/part0)
-   - a General info
-   - b Fundamentals of Web apps
+### [Part 1 - Introduction to React](https://github.com/ningia92/full-stack-open/tree/main/part1)
 
-[Solutions part 0]()
+### [Part 2 - Communicating with server](https://github.com/ningia92/full-stack-open/tree/main/part2)
 
-### Part 1 - Introduction to React
-   - a Introduction to React
-   - b JavaScript
-   - c Component state, event handlers
-   - d A more complex state, debugging React apps
+### [Part 3 - Programming a server with NodeJS and Express](https://github.com/ningia92/full-stack-open/tree/main/part3)
 
-[Solutions part 1]()
+### [Part 4 - Testing Express servers, user administration](https://github.com/ningia92/full-stack-open/tree/main/part4)
 
-### Part 2 - Communicating with server
-### Part 3 - Programming a server with NodeJS and Express
-### Part 4 - Testing Express servers, user administration
-### Part 5 - Testing React apps
-### Part 6 - Advanced state management
-### Part 7 - React router, custom hooks, styling app with CSS and webpack
-### Part 8 - GraphQL
-### Part 9 - Typescript
-### Part 10 - React Native
-### Part 11 - CI/CD
-### Part 12 - Containers
-### Part 13 - Using relational databases
+### [Part 5 - Testing React apps](https://github.com/ningia92/full-stack-open/tree/main/part5)
+
+### [Part 6 - Advanced state management](https://github.com/ningia92/full-stack-open/tree/main/part6)
+
+### [Part 7 - React router, custom hooks, styling app with CSS and webpack](https://github.com/ningia92/full-stack-open/tree/main/part7)
+
+### [Part 8 - GraphQL](https://github.com/ningia92/full-stack-open/tree/main/part8)
+
+### [Part 9 - Typescript](https://github.com/ningia92/full-stack-open/tree/main/part9)
+
+### [Part 10 - React Native](https://github.com/ningia92/full-stack-open/tree/main/part10)
+
+### [Part 11 - CI/CD](https://github.com/ningia92/full-stack-open/tree/main/part11)
+
+### [Part 12 - Containers](https://github.com/ningia92/full-stack-open/tree/main/part12)
+
+### [Part 13 - Using relational databases](https://github.com/ningia92/full-stack-open/tree/main/part13)
