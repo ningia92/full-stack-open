@@ -4,5 +4,5 @@ In this part, we will familiarize ourselves with the practicalities of taking th
 
 ## Modules
 
-a. [General info](https://fullstackopen.com/en/part0/general_info)  
-b. [Fundamental of Web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
+a. General info
+b. Fundamental of Web apps
