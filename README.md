@@ -15,7 +15,7 @@ Other topics include debugging applications, container technology, configuration
 
 ### [Part 0 - Fundamentals of Web apps](https://github.com/ningia92/full-stack-open/tree/main/part0)
   <details> 
-  <summary>Exercises</summary>
+  <summary>Exercises progess</summary>
   
   - [x] 0.1  
   - [x] 0.2  
@@ -27,6 +27,9 @@ Other topics include debugging applications, container technology, configuration
   </details>
 
 ### [Part 1 - Introduction to React](https://github.com/ningia92/full-stack-open/tree/main/part1)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 1.1
   - [ ] 1.2
   - [ ] 1.3
@@ -41,8 +44,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 1.12
   - [ ] 1.13
   - [ ] 1.14
+        
+  </details>
 
 ### [Part 2 - Communicating with server](https://github.com/ningia92/full-stack-open/tree/main/part2)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 2.1
   - [ ] 2.2
   - [ ] 2.3
@@ -64,7 +72,12 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 2.19
   - [ ] 2.20
 
+  </details>
+
 ### [Part 3 - Programming a server with NodeJS and Express](https://github.com/ningia92/full-stack-open/tree/main/part3)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 3.1
   - [ ] 3.2
   - [ ] 3.3
@@ -87,8 +100,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 3.20
   - [ ] 3.21
   - [ ] 3.22
+        
+  </details>
 
 ### [Part 4 - Testing Express servers, user administration](https://github.com/ningia92/full-stack-open/tree/main/part4)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 4.1
   - [ ] 4.2
   - [ ] 4.3
@@ -111,8 +129,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 4.20
   - [ ] 4.21
   - [ ] 4.22
+    
+  </details>
 
 ### [Part 5 - Testing React apps](https://github.com/ningia92/full-stack-open/tree/main/part5)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 5.1
   - [ ] 5.2
   - [ ] 5.3
@@ -134,8 +157,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 5.19
   - [ ] 5.20
   - [ ] 5.21
+    
+  </details>
 
 ### [Part 6 - Advanced state management](https://github.com/ningia92/full-stack-open/tree/main/part6)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 6.1
   - [ ] 6.2
   - [ ] 6.3
@@ -157,8 +185,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 6.19
   - [ ] 6.20
   - [ ] 6.21
+    
+  </details>
 
 ### [Part 7 - React router, custom hooks, styling app with CSS and webpack](https://github.com/ningia92/full-stack-open/tree/main/part7)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 7.1
   - [ ] 7.2
   - [ ] 7.3
@@ -180,8 +213,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 7.19
   - [ ] 7.20
   - [ ] 7.21
+    
+  </details>
 
 ### [Part 8 - GraphQL](https://github.com/ningia92/full-stack-open/tree/main/part8)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 8.1
   - [ ] 8.2
   - [ ] 8.3
@@ -208,8 +246,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 8.24
   - [ ] 8.25
   - [ ] 8.26
+    
+  </details>
 
 ### [Part 9 - Typescript](https://github.com/ningia92/full-stack-open/tree/main/part9)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 9.1
   - [ ] 9.2
   - [ ] 9.3
@@ -237,8 +280,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 9.25
   - [ ] 9.26
   - [ ] 9.27
+    
+  </details>
 
 ### [Part 10 - React Native](https://github.com/ningia92/full-stack-open/tree/main/part10)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 10.1
   - [ ] 10.2
   - [ ] 10.3
@@ -266,8 +314,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 10.25
   - [ ] 10.26
   - [ ] 10.27
+    
+  </details>
 
 ### [Part 11 - CI/CD](https://github.com/ningia92/full-stack-open/tree/main/part11)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 11.1
   - [ ] 11.2
   - [ ] 11.3
@@ -290,8 +343,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 11.20
   - [ ] 11.21
   - [ ] 11.22
+    
+  </details>
 
 ### [Part 12 - Containers](https://github.com/ningia92/full-stack-open/tree/main/part12)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 12.1
   - [ ] 12.2
   - [ ] 12.3
@@ -314,8 +372,13 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 12.20
   - [ ] 12.21
   - [ ] 12.22
+    
+  </details>
 
 ### [Part 13 - Using relational databases](https://github.com/ningia92/full-stack-open/tree/main/part13)
+  <details> 
+  <summary>Exercises progess</summary>
+    
   - [ ] 13.1
   - [ ] 13.2
   - [ ] 13.3
@@ -340,3 +403,5 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 13.22
   - [ ] 13.23
   - [ ] 13.24
+    
+  </details>
