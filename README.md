@@ -14,7 +14,7 @@ Other topics include debugging applications, container technology, configuration
 ----------------------------------------------------------------------------
 
 ### [Part 0 - Fundamentals of Web apps](https://github.com/ningia92/full-stack-open/tree/main/part0)
-  <details>
+  <details open>
   - [x] 0.1
   - [x] 0.2
   - [x] 0.3
@@ -22,7 +22,6 @@ Other topics include debugging applications, container technology, configuration
   - [ ] 0.5
   - [ ] 0.6
   </details>
-  details:not([open])>*:not(summary) { display: none !important; }
 
 ### [Part 1 - Introduction to React](https://github.com/ningia92/full-stack-open/tree/main/part1)
   - [ ] 1.1
