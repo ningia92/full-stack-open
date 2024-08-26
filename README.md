@@ -32,9 +32,9 @@ Other topics include debugging applications, container technology, configuration
     
   - [x] 1.1
   - [x] 1.2
-  - [ ] 1.3
-  - [ ] 1.4
-  - [ ] 1.5
+  - [x] 1.3
+  - [x] 1.4
+  - [x] 1.5
   - [ ] 1.6
   - [ ] 1.7
   - [ ] 1.8
