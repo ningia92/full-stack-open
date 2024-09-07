@@ -37,42 +37,17 @@ const App = () => {
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
-  const [all, setAll] = useState(0)
-  const [average, setAverage] = useState(0)
-  const [positive, setPositive] = useState(0)
 
-  const addGood = () => {
-    let updatedGood = good + 1
-    let updatedAll = all + 1
-    setGood(updatedGood)
-    setAll(updatedAll)
-    setAverage((updatedGood - bad) / updatedAll)
-    setPositive((updatedGood / updatedAll) * 100)
-  }
-
-  const addNeutral = () => {
-    let updatedAll = all + 1
-    setNeutral(neutral + 1)
-    setAll(updatedAll)
-    setAverage((good - bad) / updatedAll)
-    setPositive((good / updatedAll) * 100)
-  }
-
-  const addBad = () => {
-    let updatedBad = bad + 1
-    let updatedAll = all + 1
-    setBad(updatedBad)
-    setAll(updatedAll)
-    setAverage((good - updatedBad) / updatedAll)
-    setPositive((good / updatedAll) * 100)
-  }
+  const all = good + neutral + bad
+  const average = (all === 0 ? 0 : (good - bad) / all)
+  const positive = (all === 0 ? 0 : (good / all) * 100)
 
   return (
     <div>
       <Heading text="give feedback" />
-      <Button onClick={addGood} text="good" />
-      <Button onClick={addNeutral} text="neutral" />
-      <Button onClick={addBad} text="bad" />
+      <Button onClick={() => setGood(good + 1)} text="good" />
+      <Button onClick={() => setNeutral(neutral + 1)} text="neutral" />
+      <Button onClick={() => setBad(bad + 1)} text="bad" />
       <Heading text="statistics" />
       <Statistics good={good} neutral={neutral} bad={bad} all={all} average={average} positive={positive} />
     </div>
