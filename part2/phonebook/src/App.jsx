@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import PersonForm from './components/PersonForm'
 import Filter from './components/Filter'
 import Persons from './components/Persons'
+import Notification from './components/Notification'
 import phoneBService from './services/persons'
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
   const [newName, setNewName] = useState('')
   const [newNumber, setNewNumber] = useState('')
   const [searchName, setSearchName] = useState('')
+  const [message, setMessage] = useState(null)
+  const [style, setStyle] = useState('')
 
   useEffect(() => {
     phoneBService
@@ -27,6 +30,12 @@ const App = () => {
           .then(returnedPerson => {
             setPersons(persons.map(person => person.id !== personFound.id ? person : returnedPerson))
           })
+          .catch(error => {
+            setMessage(`Information of ${personFound.name} has already been removed from server`)
+            setStyle('red')
+          })
+        setMessage(`${personFound.name}'s number modified`)
+        setStyle('green')
       }
     } else {
       const newPerson = {
@@ -36,7 +45,12 @@ const App = () => {
       phoneBService
         .create(newPerson)
         .then(returnedPerson => setPersons(persons.concat(returnedPerson)))
+      setMessage(`Added ${newPerson.name}`)
+      setStyle('green')
     }
+    setTimeout(() => {
+      setMessage(null)
+    }, 5000);
     setNewName('')
     setNewNumber('')
   }
@@ -61,6 +75,7 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
+      <Notification message={message} style={style} />
       <Filter searchName={searchName} handleSearchName={handleSearchName} />
       <h3>add a new</h3>
       <PersonForm addPerson={addPerson} newName={newName} handleName={handleName} newNumber={newNumber} handleNumber={handleNumber} />

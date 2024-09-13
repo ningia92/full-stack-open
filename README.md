@@ -66,8 +66,8 @@ Other topics include debugging applications, container technology, configuration
   - [x] 2.13
   - [x] 2.14
   - [x] 2.15
-  - [ ] 2.16
-  - [ ] 2.17
+  - [x] 2.16
+  - [x] 2.17
   - [ ] 2.18
   - [ ] 2.19
   - [ ] 2.20
