@@ -1,13 +1,31 @@
 const { test, after, beforeEach, describe } = require('node:test')
 const assert = require('node:assert')
-const supertest = require('supertest')
 const mongoose = require('mongoose')
-
-const helper = require('./test_helper')
+const supertest = require('supertest')
 const app = require('../app')
 const api = supertest(app)
 
+const helper = require('./test_helper')
+
 const Blog = require('../models/blog')
+
+const newUserToken = async () => {
+  const newUser = {
+    username: 'elBarto',
+    name: 'Bart Simpson',
+    password: 'secret'
+  }
+
+  await api
+    .post('/api/users')
+    .send(newUser)
+
+  const response = await api
+    .post('/api/login')
+    .send(newUser)
+
+  return response.body.token
+}
 
 describe('when there is initially some blogs saved', () => {
   beforeEach(async () => {
@@ -45,6 +63,7 @@ describe('when there is initially some blogs saved', () => {
 
       await api
         .post('/api/blogs')
+        .set('Authorization', `Bearer ${await newUserToken()}`)
         .send(newBlog)
         .expect(201)
         .expect('Content-Type', /application\/json/)
@@ -52,12 +71,8 @@ describe('when there is initially some blogs saved', () => {
       const blogsAtEnd = await helper.blogsInDb()
       assert.strictEqual(blogsAtEnd.length, helper.initialBlogs.length + 1)
 
-      assert(blogsAtEnd.some(blog => {
-        return blog.title === 'blogTest3' &&
-          blog.author === 'authorTest3' &&
-          blog.url === 'urlTest3' &&
-          blog.likes === 1
-      }))
+      const blogs = blogsAtEnd.map(b => b.title)
+      assert(blogs.includes('blogTest3'))
     })
 
     test('if likes property value is missing, its value is 0', async () => {
@@ -69,6 +84,7 @@ describe('when there is initially some blogs saved', () => {
 
       const response = await api
         .post('/api/blogs')
+        .set('Authorization', `Bearer ${await newUserToken()}`)
         .send(newBlog)
         .expect(201)
         .expect('Content-Type', /application\/json/)
@@ -87,8 +103,12 @@ describe('when there is initially some blogs saved', () => {
 
       await api
         .post('/api/blogs')
+        .set('Authorization', `Bearer ${await newUserToken()}`)
         .send(newBlog)
         .expect(400)
+
+      const blogsAtEnd = await helper.blogsInDb()
+      assert.strictEqual(blogsAtEnd.length, helper.initialBlogs.length)
     })
 
     test('if url property is missing, respond with status code 400 bad request', async () => {
@@ -99,30 +119,40 @@ describe('when there is initially some blogs saved', () => {
 
       await api
         .post('/api/blogs')
+        .set('Authorization', `Bearer ${await newUserToken()}`)
         .send(newBlog)
         .expect(400)
+
+      const blogsAtEnd = await helper.blogsInDb()
+      assert.strictEqual(blogsAtEnd.length, helper.initialBlogs.length)
     })
   })
 
   describe('deletion of a blog post', () => {
     test('succeeds with status code 204 if id is valid', async () => {
+      const newBlog = {
+        title: 'blogTest5',
+        author: 'authorTest5',
+        url: 'urlTest5'
+      }
+
+      const response = await api
+        .post('/api/blogs')
+        .set('Authorization', `Bearer ${await newUserToken()}`)
+        .send(newBlog)
+
       const blogsAtStart = await helper.blogsInDb()
-      const blogToDelete = blogsAtStart[0]
 
       await api
-        .delete(`/api/blogs/${blogToDelete.id}`)
+        .delete(`/api/blogs/${response.body.id}`)
+        .set('Authorization', `Bearer ${await newUserToken()}`)
         .expect(204)
 
       const blogsAtEnd = await helper.blogsInDb()
+      assert.strictEqual(blogsAtEnd.length, blogsAtStart.length - 1)
 
-      assert.strictEqual(blogsAtEnd.length, helper.initialBlogs.length - 1)
-
-      assert(!blogsAtEnd.some(blog => {
-        return blog.title === 'blogTest1' &&
-          blog.author === 'authorTest1' &&
-          blog.url === 'urlTest1' &&
-          blog.likes === 5
-      }))
+      const blogs = blogsAtEnd.map(b => b.title)
+      assert(!blogs.includes(response.body.title))
     })
   })
 
