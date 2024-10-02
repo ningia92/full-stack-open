@@ -11,7 +11,7 @@ This course is an introduction to modern web development with JavaScript. The ma
 
 Other topics include debugging applications, container technology, configuration, managing runtime environments, and databases.
 
-### [Certificate of completion](https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/b1c167110e2357057ba5383858861544) :seedling:
+### [Certificate of completion (Part 0-5)](https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/b1c167110e2357057ba5383858861544) :seedling:
 
 ----------------------------------------------------------------------------
 
